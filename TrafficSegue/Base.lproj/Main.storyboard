@@ -17,8 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkj-zp-51V">
-                                <rect key="frame" x="172" y="407" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="145" y="401" width="100" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="To Yellow">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aFe-yO-gt6" kind="show" id="2rK-pt-ceD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -38,12 +44,18 @@
             <objects>
                 <viewController id="aFe-yO-gt6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1QD-mx-Z3h">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2A-nB-Bxh">
-                                <rect key="frame" x="172" y="407" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="146.66666666666666" y="374" width="97" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="To Green">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EDf-Xa-7bA" kind="show" id="Ymr-Xg-KPj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fsx-eJ-3Rf"/>
@@ -53,13 +65,33 @@
                             <constraint firstItem="o2A-nB-Bxh" firstAttribute="centerY" secondItem="1QD-mx-Z3h" secondAttribute="centerY" id="b0f-pA-ghP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="YNI-A8-T82"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ns1-7y-wkh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="103"/>
+            <point key="canvasLocation" x="786" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PYG-E0-nvz">
+            <objects>
+                <viewController id="EDf-Xa-7bA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O3S-qf-pbC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ght-Nf-i6d"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PrT-qM-RIG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vGQ-jw-Bry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500" y="94"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
