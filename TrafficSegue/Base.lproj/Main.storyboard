@@ -83,26 +83,16 @@
                     <view key="view" contentMode="scaleToFill" id="O3S-qf-pbC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bt-AC-b1t">
-                                <rect key="frame" x="152.66666666666666" y="401" width="85" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Dismiss">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="MDZ-kP-sQ1" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="24O-D4-NYK"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ght-Nf-i6d"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
-                        <constraints>
-                            <constraint firstItem="3bt-AC-b1t" firstAttribute="centerX" secondItem="O3S-qf-pbC" secondAttribute="centerX" id="Fam-9R-x06"/>
-                            <constraint firstItem="3bt-AC-b1t" firstAttribute="centerY" secondItem="O3S-qf-pbC" secondAttribute="centerY" id="MbT-A6-tnr"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Green" id="PrT-qM-RIG"/>
+                    <navigationItem key="navigationItem" title="Green" id="PrT-qM-RIG">
+                        <barButtonItem key="rightBarButtonItem" title="Pop" id="SMq-dc-VlR">
+                            <connections>
+                                <segue destination="MDZ-kP-sQ1" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="xFZ-sS-OOg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGQ-jw-Bry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="MDZ-kP-sQ1" userLabel="Exit" sceneMemberID="exit"/>
