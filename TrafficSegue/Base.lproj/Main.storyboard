@@ -22,6 +22,9 @@
                                 <state key="normal" title="Push to Yellow">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="yellowButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jun-ru-Y4r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POU-I0-L5f">
                                 <rect key="frame" x="216" y="319" width="98" height="30"/>
@@ -29,6 +32,9 @@
                                 <state key="normal" title="Push to Green">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="greenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcU-qQ-MIb"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7x-3w-aHK">
                                 <rect key="frame" x="171" y="407" width="49" height="31"/>
@@ -42,8 +48,9 @@
                         <barButtonItem key="backBarButtonItem" title="Go to Red" id="DcI-1y-51g"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="aFe-yO-gt6" kind="show" id="kUb-1G-BKL"/>
-                        <segue destination="EDf-Xa-7bA" kind="show" id="buo-w9-VQq"/>
+                        <outlet property="mySwitch" destination="t7x-3w-aHK" id="zvw-VB-l2Z"/>
+                        <segue destination="aFe-yO-gt6" kind="show" identifier="Yellow" id="kUb-1G-BKL"/>
+                        <segue destination="EDf-Xa-7bA" kind="show" identifier="Green" id="buo-w9-VQq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -11,10 +11,25 @@ class ViewController: UIViewController {
 
 //    @IBOutlet var myTextField: UITextField!
     
+    @IBOutlet var mySwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func yellowButtonTapped(_ sender: UIButton) {
+        if mySwitch.isOn{
+            performSegue(withIdentifier: "Yellow", sender: nil)
+        }
+    }
+    
+    @IBAction func greenButtonTapped(_ sender: UIButton) {
+        if mySwitch.isOn{
+            performSegue(withIdentifier: "Green", sender: nil)
+        }
+    }
+    
     
 //    @IBAction func unwindToRed(unwindSegue: UIStoryboardSegue){
 //
