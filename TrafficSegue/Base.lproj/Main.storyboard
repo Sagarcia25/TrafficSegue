@@ -15,34 +15,12 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkj-zp-51V">
-                                <rect key="frame" x="145" y="401" width="100" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="To Yellow">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="aFe-yO-gt6" kind="show" id="2rK-pt-ceD"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zfo-I6-X0h">
-                                <rect key="frame" x="145" y="342" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Red" id="sYU-os-mez">
                         <barButtonItem key="backBarButtonItem" title="Go to Red" id="DcI-1y-51g"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="myTextField" destination="zfo-I6-X0h" id="6WZ-N8-o5V"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,24 +33,8 @@
                     <view key="view" contentMode="scaleToFill" id="1QD-mx-Z3h">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2A-nB-Bxh">
-                                <rect key="frame" x="146.66666666666666" y="401" width="97" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="To Green">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="EDf-Xa-7bA" kind="show" id="Ymr-Xg-KPj"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fsx-eJ-3Rf"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                        <constraints>
-                            <constraint firstItem="o2A-nB-Bxh" firstAttribute="centerX" secondItem="1QD-mx-Z3h" secondAttribute="centerX" id="Qee-ed-OC7"/>
-                            <constraint firstItem="o2A-nB-Bxh" firstAttribute="centerY" secondItem="1QD-mx-Z3h" secondAttribute="centerY" id="b0f-pA-ghP"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yellow" id="YNI-A8-T82">
                         <barButtonItem key="backBarButtonItem" title="Go to Yellow" id="von-mg-BPi"/>
@@ -80,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ns1-7y-wkh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1713.8461538461538" y="93.838862559241704"/>
+            <point key="canvasLocation" x="1731" y="-168"/>
         </scene>
         <!--Green-->
         <scene sceneID="PYG-E0-nvz">
@@ -103,7 +65,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGQ-jw-Bry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="MDZ-kP-sQ1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2429.2307692307691" y="93.838862559241704"/>
+            <point key="canvasLocation" x="1731" y="517"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ng3-MX-VxV">
